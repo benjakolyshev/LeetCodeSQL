@@ -1,2 +1,2 @@
 # LeetCodeSQL
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+Collection of LeetCode questions I have been doing - specifically SQL related.
