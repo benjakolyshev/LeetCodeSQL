@@ -1,10 +1,3 @@
-/*
-SELECT ROUND( sum(case when sub_query.min_date + 1 = a.event_date then 1
-    else 0 end) / count(distinct sub_query.player_id), 2 ) as fraction
-FROM  ( select  player_id, min(event_date) as min_date from Activity group by 1 ) as sub_query
-JOIN    Activity a ON sub_query.player_id = a.player_id
-
-*/
 SELECT  ROUND(t1.logged_back/t2.total, 2) as fraction
 FROM
 ( SELECT  COUNT(a1.player_id) as logged_back
